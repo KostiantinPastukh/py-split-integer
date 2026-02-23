@@ -1,7 +1,7 @@
 from app.split_integer import split_integer
 
 
-def test_should_return_an_empty_list_is_number_of_part_equals_zero():
+def test_should_return_an_empty_list_is_number_of_part_equals_zero() -> None:
     assert split_integer(3, 0) == []
 
 
@@ -29,5 +29,5 @@ def test_should_return_len_list_equal_number_of_parts() -> None:
     assert len(split_integer(17, 6)) == 6
 
 
-def test_numbers_in_the_list_must_be_equal_to_each_other_or_differ_by_one():
+def test_numbers_in_the_list_must_be_equal_to_each_other_or_differ_by_one() -> None:
     assert split_integer(32, 6) == [5, 5, 5, 5, 6, 6]
