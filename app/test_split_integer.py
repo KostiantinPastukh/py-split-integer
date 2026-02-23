@@ -29,5 +29,5 @@ def test_should_return_len_list_equal_number_of_parts() -> None:
     assert len(split_integer(17, 6)) == 6
 
 
-def test_numbers_in_the_list_must_be_equal_to_each_other_or_differ_by_one() -> None:
+def test_numbers_in_the_list_must_be_each_other_or_differ_by_one() -> None:
     assert split_integer(32, 6) == [5, 5, 5, 5, 6, 6]
